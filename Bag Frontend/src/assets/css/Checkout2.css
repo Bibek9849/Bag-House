@@ -1,0 +1,320 @@
+.c2-container{background: white;height:100%; width:100vw;overflow-x: hidden;}
+
+
+
+
+.c2-container .c2-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    height:10%;
+    background: white;
+
+
+}
+.c2-logo img {
+    width:130px; /* Set the desired width of the logo */
+    height: 120px; /* Maintain aspect ratio */
+    margin-top: -17px; /* Add top margin for spacing, adjust as needed */
+
+
+}
+
+.c2-searchbar {
+    flex-grow: 1; /* Allow the search bar to take up remaining space */
+    margin-left: 15px;
+    /* Adjust the left margin for spacing, change as needed */
+}
+
+
+.c2-searchbar input {
+    width: 100%; /* Take up 100% of the available width within .searchbar */
+    padding: 10px; /* Add padding for better visual appearance, adjust as needed */
+    box-sizing: border-box;
+    margin-top: 14px;
+    background-color: white; /* Include padding in the width calculation */
+    color: black;
+    border-radius:40px ;
+    font-size: 16px;
+    border: 2px solid black;
+    outline: none;
+
+}
+
+.c2-searchbar input::placeholder {
+    color: black; /* Change the color of the placeholder text */
+    font-size: 16px; /* Adjust the font size of the placeholder text */
+}
+
+.c2-btn-wrapper button {
+    margin-left: 10px;
+    background-color:white;
+    color: black;
+    padding: 25px 10px;
+    cursor: pointer;
+    border: none;
+    /*border-radius: 4px;*/
+    font-size: 18px;
+    height: 60px;
+    border-radius: 0;
+
+}
+
+.c2-search_button button{
+    margin-left:-43px;
+    margin-top: 23px;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    padding:5px;
+    border: none;
+
+
+
+}
+
+.c2-search_button i {
+    font-size: 20px; /* Adjust the font size of the icon */
+    margin-right: 5px;}/* Add spacing between the icon and text */
+.c2-btn-wrapper button i {
+    font-size: 20px; /* Adjust the font size of the icon */
+    margin-right: 5px; /* Add spacing between the icon and text */
+}
+.c2-btn_before button {
+    margin-left: 10px;
+    background-color:white;
+    color: black;
+    padding: 25px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    height: 60px;
+
+}
+
+.c2-btn_before button{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease; /* Add a smooth transition effect */
+}
+/* Change the border color when the button is hovered */
+.c2-btn_before button:hover {
+    border-bottom-color: black; /* Change to your desired border color */
+}
+.c2-btn-wrapper button{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease; /* Add a smooth transition effect */
+}
+/* Change the border color when the button is hovered */
+.c2-btn-wrapper button:hover {
+    border-bottom-color: black; /* Change to your desired border color */
+}
+
+/*.au-btn_before button i {*/
+/*    font-size: 20px; !* Adjust the font size of the icon *!*/
+/*    margin-right: 5px;}!* Add spacing between the icon and text *!*/
+.c2-container .c2-footer{
+
+
+    display: flex;
+    height:40% ;
+    background: black;
+    /*margin-top: 20px;*/
+    font-size: 5px;
+    /*align-items: flex-end;*/
+    justify-content: space-around;
+
+}
+.c2-footer .c2-get-help{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 35px;
+
+
+}
+.c2-footer .c2-about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -75px;
+
+}
+.c2-footer .c2-logos{
+    display: flex;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+
+}
+.c2-logos img{
+    padding: 8px}
+.c2-get-help button{
+    background-color: black;
+    color: grey;
+    font-size: 14px;
+    border: none;
+
+}
+.c2-get-help button:hover {
+    color: white; /* Change to the desired color on hover */
+}
+.c2-get-help span{
+    font-size: 13px;
+    margin-top: 15px;
+    color: lightgrey;
+    /*padding-bottom: -50px;*/
+    /*margin-bottom: -60px;*/
+
+
+}
+.c2-about-us button{
+    background-color: black;
+    color: grey;
+    font-size: 14px;
+    border: none;
+
+}
+.c2-about-us button:hover {
+    color: white; /* Change to the desired color on hover */
+}
+
+
+.c2-logos span{
+    font-size: 16px;
+    color: lightgrey;
+
+}
+
+.c2-logos img{
+    cursor: pointer;
+}
+.c2-about-us h1{
+    color: white;
+    font-size: 15px;
+}
+.c2-get-help h1{
+    color: white;
+    font-size: 15px;
+}
+.c2-body {
+    height: 100vh;
+    background-color: lightgrey;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.c2-adddelivery{
+    display: flex;
+    gap: 10px;
+}
+
+.c2-addressform {
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 45vw;
+    margin-left: 30px;
+    margin-bottom: 150px;
+    height: 50vh;
+    gap: 25px;
+}
+.order_details{
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+    height: 50vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.total{
+    column-gap: 50px;
+    display: flex;
+}
+.delivery{
+    display: flex;
+    column-gap: 10px;
+
+}
+.g-total{
+    display: flex;
+    column-gap: 45px;
+
+}
+.c2-addressform label{
+    font-weight: 500;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.c2-addressform input {
+    background-color: white; /* Include padding in the width calculation */
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    outline: none;
+    width: 290px;
+}
+
+.c2-addressform input::placeholder {
+    color: black; /* Change the color of the placeholder text */
+    font-size: 16px; /* Adjust the font size of the placeholder text */
+}
+
+.c2-firstrow{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.c2-secondrow{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+}
+
+.c2-secondrow button{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    width: 68px;
+}
+.c2-body .c2-continue button{
+    margin-left: 1043px;
+    margin-top: 5px;
+}
+.c2-continue i{
+    margin-left: 5px;
+
+}
+.order_details h3{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
