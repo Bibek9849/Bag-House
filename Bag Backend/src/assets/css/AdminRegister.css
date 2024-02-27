@@ -1,0 +1,108 @@
+.ar-container {
+    height: 100vh; /* Adjust the height as needed */
+    width: 100vw; /* Adjust the width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ar-Signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    align-items: center;
+    height: 70%;
+    width: 29%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}
+.ar-Head {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    row-gap: 30px;
+    margin-top: -30px;
+    /*align-content: flex-start;*/
+
+    height: 20%; /* Adjust the height of the container */
+
+    /*margin-bottom: 500px!* Set a background color to visualize the container *!*/
+}
+
+.ar-Head img {
+    height:130%; /* Adjust the height of the image */
+    width: auto; /* Let the width adjust automatically to maintain the aspect ratio */
+}
+.ar-Head h1 {
+    height: auto;
+    width: auto;
+    font-size: 33px;
+    margin-top: -70px;
+    font-weight: bold;
+    color: black;
+}
+.ar-Body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.ar-Body input{
+
+    background: transparent;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size:15px ;
+    color: black;
+    height: 40px;
+    width: 350px;
+    text-indent: 10px;
+
+
+}
+
+.ar-Body input::placeholder{
+    color: black;
+}
+.ar-checkbox label{
+    color: black;
+    font-size: 16px;
+}
+.ar-Footer{
+    display: flex;
+    /*column-gap: 30px;*/
+    row-gap: 10px;
+    flex-direction: column;
+}
+.ar-button{
+    display: flex;
+    column-gap: 40px;
+
+
+    justify-content: center;
+    align-items: center;
+
+}
+.ar-button button{
+    /*height: 100%;*/
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+
+
+
+
+}
+.ar-button button:hover {
+    background-color: grey; /* Change to your desired hover color */
+}
+.ar-checkbox{
+    margin-left: 20px;
+
+}
