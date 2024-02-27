@@ -5,6 +5,7 @@ import { useMutation } from "@tanstack/react-query";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
+import Baglogo  from "../../images/logo.png"
 
 interface FormData {
     firstName: string;
@@ -35,7 +36,7 @@ function Register() {
     });
 
     const { register, handleSubmit, formState: { errors }, getValues } = useForm<FormData>();
-
+    console.log(errors)
     const onSubmit = async (data: FormData) => {
         try {
             await apiCall.mutateAsync(data);
@@ -46,27 +47,45 @@ function Register() {
             console.error('Error during registration', error);
         }
     };
-
+console.log(Baglogo)
+    console.log("registerpage")
     return (
         <div className={"register-container"}>
             <div className={"r-Signup-form"}>
                 <div className={"r-Head"}>
                     <img
-                        src={"images/logo.png"}
+                        src={Baglogo}
                         alt={"logo"}
                     />
                     <h1>Signup</h1>
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className={"r-Body"}>
-                        <input type={"text"} placeholder={"First Name"} {...register("firstName", {required: true})} />
+                        <input type={"text"} placeholder={"First Names"} {...register("firstName", {required: true})} />
+                        {errors.firstName && <p className="error">{errors.firstName.type}</p>}
+                        {errors.firstName?.message!=="" && <p className="error">{errors.firstName?.message}</p>}
+
+
                         <input type={"text"} placeholder={"Last Name"} {...register("lastName", {required: true})} />
+                        {errors.lastName && <p className="error">{errors.lastName.type}</p>}
+                        {errors.lastName?.message!=="" && <p className="error">{errors.lastName?.message}</p>}
+
+
                         <input type={"email"} placeholder={"Email"} {...register("email", {required: true})} />
+                        {errors.email && <p className="error">{errors.email.type}</p>}
+                        {errors.email?.message!=="" && <p className="error">{errors.email?.message}</p>}
+
+
                         <input type={"password"} placeholder={"Password"} {...register("password", {required: true})} />
+                        {errors.password && <p className="error">{errors.password.type}</p>}
+                        {errors.password?.message!=="" && <p className="error">{errors.password?.message}</p>}
+
                         <input type={"password"} placeholder={"Confirm Password"} {...register("confirmPassword", {required: true, validate: value => value === getValues().password || "Passwords do not match"})} />
-                        {(errors.firstName || errors.lastName || errors.email || errors.password || errors.confirmPassword) && (
-                            <span>All fields are required</span>
-                        )}
+                        {errors.confirmPassword && <p className="error">{errors.confirmPassword.type}</p>}
+                        {errors.confirmPassword?.message!=="" && <p className="error">{errors.confirmPassword?.message}</p>}
+
+
+                        
                     </div>
                     <div className={"r-Footer"}>
                         <div className={"r-button"}>

@@ -62,13 +62,13 @@ function Dashboard() {
                 </div>
 
                 <div className={"s-searchbar"}>
-                    <input
-                        type={"text"}
-                        placeholder={"Search Bags"}
-                        onChange={(e) => {
-                            setSearchData(e.target.value);
-                        }}
-                    />
+                   <input
+                       type={"text"}
+                       placeholder={"Search Bags"}
+                       onChange={(e) => {
+                           setSearchData(e.target.value);
+                       }}
+                   />
                 </div>
                 <div className={"s-search_button"}>
                     <button type="submit" onClick={handleSearch}>
