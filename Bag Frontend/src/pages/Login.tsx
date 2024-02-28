@@ -43,19 +43,16 @@ const Login: React.FC = () => {
 
                 // Check if the user has the 'admin' role
                 if (decodedToken.roles && decodedToken.roles.includes('admin')) {
-                    // User has admin role, navigate to admin dashboard with user_id
                     navigate(`/admin/products`);
                 } else {
-                    // User doesn't have admin role, navigate to regular dashboard with user_id
                     navigate(`/dashboard`);
                 }
 
                 // Show success message
                 toast.success('Login successful!');
             } else {
-                // Handle unsuccessful login (e.g., show an error message)
                 console.error('Login failed');
-                toast.error('Login failed. Please check your credentials.');
+                toast.error('Please check your Details.');
             }
         } catch (error) {
             console.error('Error during login:', error);
@@ -103,9 +100,7 @@ const Login: React.FC = () => {
 
                 </div>
                 <div className={"login-footer"}>
-                    <div className="login-forgot">
-                        <a href="#">Forgot password?</a>
-                    </div>
+                    
                     <div className={"login-btn"}>
                         <button type="submit">Login</button>
                     </div>

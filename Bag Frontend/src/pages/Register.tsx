@@ -57,7 +57,7 @@ console.log(Baglogo)
                         src={Baglogo}
                         alt={"logo"}
                     />
-                    <h1>Signup</h1>
+                    <h1>Register</h1>
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className={"r-Body"}>
@@ -89,7 +89,7 @@ console.log(Baglogo)
                     </div>
                     <div className={"r-Footer"}>
                         <div className={"r-button"}>
-                            <button type="submit">Sign Up</button>
+                            <button type="submit">Register</button>
                         </div>
                         <div className={"r-login-link"}>
                             <label>Already have an account?</label> <Link to="/Login">Login</Link>

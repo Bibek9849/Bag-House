@@ -95,7 +95,7 @@ function Dashboard() {
                             <Carousel.Item interval={2000}>
                                 <img
                                     className="d-block w-100"
-                                    src="images/home1.jpg"
+                                    src="images/back.jpg"
                                     alt="First slide"
                                 />
                             </Carousel.Item>
