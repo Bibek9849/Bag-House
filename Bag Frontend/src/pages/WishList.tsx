@@ -93,22 +93,13 @@ const Aboutus: React.FC = () => {
                     </a>
                 </div>
                 <div className={"wl-btn_before"}>
-                    <button>Brands</button>
-                    <button>Categories</button>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
+                    <Link to={"/dashboard"}><button>Home</button></Link>
                     <Link to="/Aboutus"><button>About Us</button></Link>
                 </div>
-                <div className={"wl-searchbar"}>
-                    <input type={"text"} placeholder={"Search Product"} />
-                </div>
-                <div className={"wl-search_button"}>
-                    <button><i className="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-
                 <div className={"wl-btn-wrapper"}>
-                    <button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button>
-                    <button><i className="fa-regular fa-heart"></i>Wishlist</button>
-                    <Link to="/myaccount"><button>My Account</button></Link>
+                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
+                    <Link to={"/wishlist"}><button><i className="fa-regular fa-heart"></i>Favourite</button></Link>
+                    <Link to="/myaccount"><button>Profile</button></Link>
                     <Link to="/">
                         <button onClick={()=>{
                             localStorage.clear();
@@ -116,11 +107,17 @@ const Aboutus: React.FC = () => {
                         }}>Sign Out</button>
                     </Link>
                 </div>
+                <div className={"wl-searchbar"}>
+                    <input type={"text"} placeholder={"Search Product"} />
+                </div>
+                <div className={"wl-search_button"}>
+                    <button><i className="fa-solid fa-magnifying-glass"></i></button>
+                </div>
             </div>
             <div className={"wl-body"}>
                 <div className={"wl-container"}>
                     <div className={"wl-title"}>
-                        <h2>My Wishlist</h2>
+                        <h2>My Favourite</h2>
                     </div>
 
                     <div className={"wishlist-table"}>
@@ -170,7 +167,7 @@ const Aboutus: React.FC = () => {
 
                 </div>
                 <div className={"wl-about-us"}>
-                    <h1>LUGAHUB</h1>
+                    <h1>Bag House</h1>
                     <Link to="/Aboutus"><button>About Us</button></Link>
                     <Link to="/Contactus"><button>Contact Us</button></Link>
                     <Link to="/Careers"><button>Careers</button></Link>

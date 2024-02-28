@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     height:10%;
-    background: white;
+    background: darkgrey;
 
 
 }
@@ -45,7 +45,7 @@
 }
 .myaccount-btn-wrapper button {
     margin-left: 10px;
-    background-color:white;
+    background-color:transparent;
     color: black;
     padding: 25px 10px;
     cursor: pointer;
@@ -74,7 +74,7 @@
 }
 .myaccount-btn_before button {
     margin-left: 10px;
-    background-color:white;
+    background-color:transparent;
     color: black;
     padding: 25px 10px;
     cursor: pointer;

@@ -148,11 +148,21 @@ console.log(data)
                         />
                     </a>
                 </div>
+                
                 <div className={"c-btn_before"}>
-                    <button>Bags</button>
-                    <button>Categories</button>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
+                    <Link to={"/dashboard"}><button>Home</button></Link>
                     <Link to="/Aboutus"><button>About Us</button></Link>
+                </div>
+                <div className={"c-btn-wrapper"}>
+                    <button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button>
+                    <Link to={"/wishlist"}><button><i className="fa-regular fa-heart"></i>Favourite</button></Link>
+                    <Link to="/myaccount"><button>Profile</button></Link>
+                    <Link to="/">
+                        <button onClick={()=>{
+                            localStorage.clear();
+                            window.location.href="/login"
+                        }}>Sign Out</button>
+                    </Link>
                 </div>
                 <div className={"c-searchbar"}>
                     <input type={"text"} placeholder={"Search Product"} />
@@ -161,17 +171,7 @@ console.log(data)
                     <button><i className="fa-solid fa-magnifying-glass"></i></button>
                 </div>
 
-                <div className={"c-btn-wrapper"}>
-                    <button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button>
-                    <button><i className="fa-regular fa-heart"></i>Wishlist</button>
-                    <Link to="/myaccount"><button>My Account</button></Link>
-                    <Link to="/">
-                        <button onClick={()=>{
-                            localStorage.clear();
-                            window.location.href="/login"
-                        }}>Sign Out</button>
-                    </Link>
-                </div>
+              
             </div>
             <div className={"c-body"}>
                 <div className={"c-container"}>

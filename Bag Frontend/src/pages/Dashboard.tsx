@@ -51,8 +51,9 @@ function Dashboard() {
                     </a>
                 </div>
                 <div className={"db-btn_before"}>
-                    <button>Bags</button>
-                    <button>Categories</button>
+                    <Link to={"/dashboard"}><button>Home</button></Link>
+
+                    {/* <button>Bags</button> */}
                     <Link to="/Aboutus">
                         <button>About Us</button>
                     </Link>

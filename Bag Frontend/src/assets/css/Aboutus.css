@@ -10,7 +10,7 @@
     position: sticky;
     top: 0;
     height:10%;
-    background: white;
+    background: darkgrey;
 
 
 }
@@ -50,7 +50,7 @@
 
 .au-btn-wrapper button {
     margin-left: 10px;
-    background-color:white;
+    background-color:transparent;
     color: black;
     padding: 25px 10px;
     cursor: pointer;
@@ -84,7 +84,7 @@
 }
 .au-btn_before button {
     margin-left: 10px;
-    background-color:white;
+    background-color:transparent;
     color: black;
     padding: 25px 10px;
     cursor: pointer;
@@ -203,6 +203,7 @@
 }
 .au-body h1{
     font-size: 23px;
+    text-align: center;
 }
 .au-body p{
     font-size: 18px;

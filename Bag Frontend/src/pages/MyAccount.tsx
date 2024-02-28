@@ -42,10 +42,14 @@ const MyAccount: React.FC = () => {
                     </a>
                 </div>
                 <div className={"myaccount-btn_before"}>
-                    <button>Brands</button>
-                    <button>Categories</button>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
+                    <Link to={"/dashboard"}><button>Home</button></Link>
                     <Link to="/Aboutus"><button>About Us</button></Link>
+                </div>
+                <div className={"myaccount-btn-wrapper"}>
+                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
+                    <Link to={"/wishlist"}><button><i className="fa-regular fa-heart"></i>Favourite</button></Link>
+                    <Link to="/MyAccount"><button>Profile</button></Link>
+                    <Link to="/"><button>Sign Out</button></Link>
                 </div>
                 <div className={"myaccount-searchbar"}>
                     <input type={"text"} placeholder={"Search Product"} />
@@ -53,12 +57,7 @@ const MyAccount: React.FC = () => {
                 <div className={"myaccount-search_button"}>
                     <button><i className="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <div className={"myaccount-btn-wrapper"}>
-                    <button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button>
-                    <Link to={"/wishlist"}><button><i className="fa-regular fa-heart"></i>Wishlist</button></Link>
-                    <Link to="/MyAccount"><button>My Account</button></Link>
-                    <Link to="/"><button>Sign Out</button></Link>
-                </div>
+                
             </div>
 
             <div className={"myaccount-body"}>
