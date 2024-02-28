@@ -68,7 +68,7 @@ const Addaddress: React.FC = () => {
                     </a>
                 </div>
                 <div className={"address-btn_before"}>
-                    <button>Brands</button>
+                    <button>Bags</button>
                     <button>Categories</button>
                     <Link to="/Contactus"><button>Contact Us</button></Link>
                     <Link to="/Aboutus"><button>About Us</button></Link>

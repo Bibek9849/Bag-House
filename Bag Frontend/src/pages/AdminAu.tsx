@@ -14,7 +14,7 @@ function AdminAu() {
                         />
 
                     </a>
-                    <span>LugaHub</span>
+                    <span>Bag House</span>
                     <i className="fa-solid fa-bars"></i>
                 </div>
                 <div className={"aa-btn"}>

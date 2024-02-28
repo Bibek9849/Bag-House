@@ -53,11 +53,19 @@ function Dashboard() {
                 <div className={"db-btn_before"}>
                     <button>Bags</button>
                     <button>Categories</button>
-                    <Link to="/Contactus">
-                        <button>Contact Us</button>
-                    </Link>
                     <Link to="/Aboutus">
                         <button>About Us</button>
+                    </Link>
+                </div>
+                <div className={"db-btn-wrapper"}>
+                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
+                    <Link to={"/wishlist"}><button><i className="fa-regular fa-heart"></i>Favourite</button></Link>
+                    <Link to="/myaccount"><button>Profile</button></Link>
+                    <Link to="/">
+                        <button onClick={()=>{
+                            localStorage.clear();
+                            window.location.href="/login"
+                        }}>Sign Out</button>
                     </Link>
                 </div>
 
@@ -76,45 +84,19 @@ function Dashboard() {
                     </button>
                 </div>
 
-                <div className={"db-btn-wrapper"}>
-                    <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
-                    <Link to={"/wishlist"}><button><i className="fa-regular fa-heart"></i>Favourite</button></Link>
-                    <Link to="/myaccount"><button>Profile</button></Link>
-                    <Link to="/">
-                        <button onClick={()=>{
-                            localStorage.clear();
-                            window.location.href="/login"
-                        }}>Sign Out</button>
-                    </Link>
-                </div>
+                
             </div>
             <div className={"db-body"}>
                 <div className={"db-dash1"}>
-                    <div className={"db-img-dash1"}>
-                        <Carousel>
-                            <Carousel.Item interval={2000}>
-                                <img
-                                    className="d-block w-100"
-                                    src="images/back.jpg"
-                                    alt="First slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={2000}>
-                                <img
-                                    className="d-block w-100"
-                                    src="images/home2.jpg"
-                                    alt="Second slide"
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item interval={2000}>
-                                <img
-                                    className="d-block w-100"
-                                    src="images/home4.jpg"
-                                    alt="Third slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
-                    </div>
+                <div className={"db-img-dash1"}>
+                    <img
+                        className="d-block w-100"
+                        src="images/bg1.jpg"
+                        alt="First slide"
+                    />
+                </div>
+
+                    
 
                     <div className={"db-product-dash1"}>
                         {searchData && searchByName?.data && searchByName.data.length > 0 ? (
@@ -178,33 +160,6 @@ function Dashboard() {
 
                 </div>
                 <div className={"db-dash2"}>
-                    <div className={"db-img-dash2"}>
-                        <Carousel fade>
-                            <Carousel.Item interval={1000}>
-                                <img
-                                    className="d-block w-100"
-                                    src="images/99.png"
-                                    alt="First slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1000}>
-                                <img
-                                    className="d-block w-100"
-                                    src="images/GGG.png"
-                                    alt="Second slide"
-                                />
-
-                            </Carousel.Item>
-                            <Carousel.Item interval={1000}>
-                                <img
-                                    className="d-block w-100"
-                                    src="images/00.png"
-                                    alt="Third slide"
-                                />
-                            </Carousel.Item>
-                        </Carousel>
-                    </div>
                     <div className={"db-product-dash2"}>
                         {data?.data.slice(12).map((i) => (
                             // You can save or render the remaining images in home-product-dash2 or use them elsewhere
@@ -239,11 +194,11 @@ function Dashboard() {
                     <Link to="/returnandrefundpolicy"><button>Return and Refund Policy</button></Link>
                     <Link to="/PrivacyPolicy"><button>Privacy Policy</button></Link>
                     <Link to="/Termsandcondition"><button>Terms and Conditions</button></Link>
-                    <span>@2023 Lugahub Pvt. Ltd. All Rights Reserved</span>
+                    <span>@2024 Lugahub Pvt. Ltd. All Rights Reserved</span>
 
                 </div>
                 <div className={"home-about-us"}>
-                    <h1>LUGAHUB</h1>
+                    <h1>Bag House</h1>
                     <Link to="/Aboutus"><button>About Us</button></Link>
                     <Link to="/Contactus"><button>Contact Us</button></Link>
                     <Link to="/Careers"><button>Careers</button></Link>
