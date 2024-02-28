@@ -47,9 +47,11 @@ import Category from "./pages/Category.tsx";
 
 
 const router=createBrowserRouter([
-    {path:"/",element:<Home />},
-    {path:"/login",element:<Login />},
+    // {path:"/",element:<Home />},
+    {path:"/",element:<Login />},
     {path:"/register",element:<Register />},
+    {path:"/login",element:<Login />},
+
     {path:"/dashboard",element:<Dashboard />},
     {path:"/myaccount",element:<MyAccount />},
     {path:"/editprofile",element:<EditProfile />},

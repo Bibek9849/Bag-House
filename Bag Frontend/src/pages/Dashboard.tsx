@@ -92,7 +92,7 @@ function Dashboard() {
                     <img
                         className="d-block w-100"
                         src="images/bg1.jpg"
-                        alt="First slide"
+                        alt="Pic"
                     />
                 </div>
 
@@ -159,10 +159,9 @@ function Dashboard() {
 
 
                 </div>
-                <div className={"db-dash2"}>
+                {/* <div className={"db-dash2"}>
                     <div className={"db-product-dash2"}>
                         {data?.data.slice(12).map((i) => (
-                            // You can save or render the remaining images in home-product-dash2 or use them elsewhere
                             <div onClick={() => { navigate("/products/" + i?.id) }} className={"item-section"} key={i.itemId}>
                                 <div className={"item-image"}>
                                     <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.itemName} />
@@ -183,8 +182,8 @@ function Dashboard() {
                             </div>
                         ))}
 
-                    </div>
-                </div>
+                    </div> */}
+                {/* </div> */}
             </div>
             <div className={"db-footer"}>
                 <div className={"db-get-help"}>

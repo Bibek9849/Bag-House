@@ -23,15 +23,14 @@ function Users() {
                         />
 
                     </a>
-                    <span>LugaHub</span>
-                    <i className="fa-solid fa-bars"></i>
+                    <span>Bag House</span>
                 </div>
                 <div className={"u-btn"}>
                     <div className="ap-dropdown">
-                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Products<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
+                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Bag Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
                         <div className="ap-dropdown-content">
-                            <a href="/admin/products">View Product</a>
-                            <a href="/admin/addproduct">Add Product</a>
+                            <a href="/admin/products">View Bag</a>
+                            <a href="/admin/addproduct">Add Bag</a>
 
                         </div>
                     </div>
@@ -54,16 +53,7 @@ function Users() {
                     <Link to={"/admin/totalorders"}><button className={"products"}><i className="fa-solid fa-cart-shopping"></i>Total Orders</button></Link>
                     <Link to={"/admin/users"}><button className={"products"}><i className="fa-solid fa-users"></i>Users</button></Link>
                     {/*<button className={"products"}><i className="fa-solid fa-user"></i>Profile</button>*/}
-                    <div className="pr-dropdown">
-                        <button className="pr-dropbtn"><i className="fa-solid fa-user"></i>Profile<i className="fa-solid fa-caret-down" style={{ marginLeft: '70px' }}></i></button>
-                        <div className="pr-dropdown-content">
-                            <a href="/admin/profile">View Profile</a>
-                            <a href="/admin/editprofile">Edit Profile</a>
-                            <a href="/admin/changepassword">Change Password</a>
-                        </div>
-                    </div>
-                    <Link to={"/admin/aboutus"}><button className={"products"}><i className="fa-regular fa-address-card"></i>About Us</button></Link>
-                    <Link to={"/admin/login"}><button className={"products"}><i className="fa-solid fa-arrow-right"></i>Log Out</button></Link>
+                    
                 </div>
             </div>
             <div className={"u-display"}>

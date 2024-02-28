@@ -14,7 +14,7 @@ function AdminAu() {
                         />
 
                     </a>
-                    <span>Bag House</span>
+                    <span>LugaHub</span>
                     <i className="fa-solid fa-bars"></i>
                 </div>
                 <div className={"aa-btn"}>
@@ -45,20 +45,20 @@ function AdminAu() {
                     <Link to={"/admin/totalorders"}><button className={"products"}><i className="fa-solid fa-cart-shopping"></i>Total Orders</button></Link>
                     <Link to={"/admin/users"}><button className={"products"}><i className="fa-solid fa-users"></i>Users</button></Link>
                     {/*<button className={"products"}><i className="fa-solid fa-user"></i>Profile</button>*/}
-                    <div className="pr-dropdown">
+                    {/* <div className="pr-dropdown">
                         <button className="pr-dropbtn"><i className="fa-solid fa-user"></i>Profile<i className="fa-solid fa-caret-down" style={{ marginLeft: '70px' }}></i></button>
                         <div className="pr-dropdown-content">
                             <a href="/admin/profile">View Profile</a>
                             <a href="/admin/editprofile">Edit Profile</a>
                             <a href="/admin/changepassword">Change Password</a>
                         </div>
-                    </div>
-                    <Link to={"/admin/aboutus"}><button className={"products"}><i className="fa-regular fa-address-card"></i>About Us</button></Link>
-                    <Link to={"/admin/login"}><button className={"products"}><i className="fa-solid fa-arrow-right"></i>Log Out</button></Link>
+                    </div> */}
+                    {/* <Link to={"/admin/aboutus"}><button className={"products"}><i className="fa-regular fa-address-card"></i>About Us</button></Link>
+                    <Link to={"/admin/login"}><button className={"products"}><i className="fa-solid fa-arrow-right"></i>Log Out</button></Link> */}
 
                 </div>
             </div>
-            <div className={"aa-display"}>
+            {/* <div className={"aa-display"}>
                 <h2>About Us</h2>
                 <p>If you are looking for a website that offers the very best online shopping in Nepal, choose LUGA HUB. We are a trusted and easy to use shopping site that offers a surprising, and exciting, range of top quality products, at affordable prices.
                     LUGA HUB is easy to use and we provide a level of customer service that we believe is second to none. Our aim is to make LUGA HUB people’s first choice when they are looking for top quality and affordable online shopping in Nepal.</p>
@@ -76,7 +76,7 @@ function AdminAu() {
                 <p>LUGA HUB makes online shopping in Nepal the ideal way to find quality products at low prices. We source quality products carefully, buy in bulk and pass on our savings to you, in the form of lower prices and great discounts;</p>
                 <h3>Returns:</h3>
                 <p>Our 'refund or replace' returns policy allows you to buy in complete confidence;</p>
-            </div>
+            </div> */}
         </div>
     )
 }

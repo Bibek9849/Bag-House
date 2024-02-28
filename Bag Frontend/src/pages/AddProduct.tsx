@@ -95,16 +95,15 @@ function AddProduct() {
                         />
 
                     </a>
-                    <span>LugaHub</span>
-                    <i className="fa-solid fa-bars"></i>
+                    <span>Bag House</span>
                 </div>
                 <div className={"ap-btn"}>
                     {/*<button className={"product"}><i className="fa-solid fa-clipboard"></i>Products</button>*/}
                     <div className="ap-dropdown">
-                       <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Products<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
+                       <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Bag Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
                         <div className="ap-dropdown-content">
-                            <a href="/admin/products">View Product</a>
-                            <a href="/admin/addproduct">Add Product</a>
+                            <a href="/admin/products">View Bag</a>
+                            <a href="/admin/addproduct">Add Bag</a>
 
                         </div>
                     </div>
@@ -127,21 +126,12 @@ function AddProduct() {
                     <Link to={"/admin/totalorders"}><button className={"products"}><i className="fa-solid fa-cart-shopping"></i>Total Orders</button></Link>
                     <Link to={"/admin/users"}><button className={"products"}><i className="fa-solid fa-users"></i>Users</button></Link>
                     {/*<button className={"products"}><i className="fa-solid fa-user"></i>Profile</button>*/}
-                    <div className="pr-dropdown">
-                        <button className="pr-dropbtn"><i className="fa-solid fa-user"></i>Profile<i className="fa-solid fa-caret-down" style={{ marginLeft: '70px' }}></i></button>
-                        <div className="pr-dropdown-content">
-                            <a href="/admin/profile">View Profile</a>
-                            <a href="/admin/editprofile">Edit Profile</a>
-                            <a href="/admin/changepassword">Change Password</a>
-                        </div>
-                    </div>
-                    <Link to={"/admin/aboutus"}><button className={"products"}><i className="fa-regular fa-address-card"></i>About Us</button></Link>
-                    <Link to={"/admin/login"}><button className={"products"}><i className="fa-solid fa-arrow-right"></i>Log Out</button></Link>
+                    
                 </div>
             </div>
             <div className={"ap-display"}>
                 <div className={"ap-headers"}>
-                    <h2>Add Product</h2>
+                    <h2>Add Bag</h2>
 
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -167,13 +157,13 @@ function AddProduct() {
                         </select>
 
                         <div>
-                            <span>Select Product Image</span>
+                            <span>Select Bags Image</span>
                             <input type="file" {...register("itemImage")} />
                         </div>
                     </div>
                 </div>
                 <div className={"ap-pr-btn"}>
-                    <button type={"submit"}>Add Product</button>
+                    <button type={"submit"}>Add Bags</button>
                 </div>
                 </form>
                 <ToastContainer autoClose={4000} />

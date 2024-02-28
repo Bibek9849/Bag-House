@@ -45,15 +45,14 @@ function TotalOrders() {
                         />
 
                     </a>
-                    <span>LugaHub</span>
-                    <i className="fa-solid fa-bars"></i>
+                    <span>Bag House</span>
                 </div>
                 <div className={"to-btn"}>
                     <div className="ap-dropdown">
-                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Products<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
+                        <button className="ap-dropbtn"><i className="fa-solid fa-clipboard"></i>Bag Details<i className="fa-solid fa-caret-down" style={{ marginLeft: '57px' }}></i></button>
                         <div className="ap-dropdown-content">
-                            <a href="/admin/products">View Product</a>
-                            <a href="/admin/addproduct">Add Product</a>
+                            <a href="/admin/products">View Bag</a>
+                            <a href="/admin/addproduct">Add Bag</a>
 
                         </div>
                     </div>
@@ -76,16 +75,7 @@ function TotalOrders() {
                     <Link to={"/admin/totalorders"}><button className={"products"}><i className="fa-solid fa-cart-shopping"></i>Total Orders</button></Link>
                     <Link to={"/admin/users"}><button className={"products"}><i className="fa-solid fa-users"></i>Users</button></Link>
                     {/*<button className={"products"}><i className="fa-solid fa-user"></i>Profile</button>*/}
-                    <div className="pr-dropdown">
-                        <button className="pr-dropbtn"><i className="fa-solid fa-user"></i>Profile<i className="fa-solid fa-caret-down" style={{ marginLeft: '70px' }}></i></button>
-                        <div className="pr-dropdown-content">
-                            <a href="/admin/profile">View Profile</a>
-                            <a href="/admin/editprofile">Edit Profile</a>
-                            <a href="/admin/changepassword">Change Password</a>
-                        </div>
-                    </div>
-                    <Link to={"/admin/aboutus"}><button className={"products"}><i className="fa-regular fa-address-card"></i>About Us</button></Link>
-                    <Link to={"/admin/login"}><button className={"products"}><i className="fa-solid fa-arrow-right"></i>Log Out</button></Link>
+                    
                 </div>
             </div>
             <div className={"to-display"}>
@@ -93,48 +83,39 @@ function TotalOrders() {
                 <table   id="productTable">
                     <thead>
                     <tr>
-                        <th>Order ID</th>
-                        <th>Customer ID</th>
+                        <th>S.N</th>
                         <th>Customer Details</th>
-                        <th>Product Details</th>
+                        <th>Bag Details</th>
                         <th>Total Price</th>
                         <th>Delivery Date</th>
-                        <th>Delivery Time</th>
                         <th>Delivery Status</th>
                     </tr>
                     </thead>
                     <tbody id="productTableBody">
-                    {getApiOfOrders?.data?.map(i=>(
-                        <tr>
-                            <td>{i?.id}</td>
-                            <td>{i?.user?.id}</td>
-                            <td>
-                                <p>{i?.user.firstName} {i?.user.lastName}</p>
-                                <p>{i?.user.username} </p>
-                            </td>
-                            <td>
-                                <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.itemName} />
-                                <p>{i?.item.itemName}</p>
-                                <p>{i?.item.itemDescription}</p>
-                                <p>Rs. {i?.item.itemPerPrice}</p>
-                                <p>Color:{i?.color}</p>
-                                <p>Quantity:{i?.quantity} </p>
-                                <p>Size:{i?.size}</p>
-                            </td>
-                            <td>
-                                <p>Rs.{i?.quantity * i?.item.itemPerPrice + 100}</p>
-                            </td>
-                            <td>
-                                <p>{i?.deliveryDate}</p>
-                            </td>
-                            <td>
-                                <p>{i?.deliveryTime}</p>
-                            </td>
-                            <td>
-                                <p>{i?.deliveryStatus}</p>
-                            </td>
-                        </tr>
-                    ))}
+    {getApiOfOrders?.data?.map((i, index) => (
+        <tr key={index}>
+            <td>{i?.id}</td>
+            <td>
+                <p>{i?.user.firstName} {i?.user.lastName}</p>
+                <p>{i?.user.username}</p>
+            </td>
+            <td>
+                <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.item.itemName} />
+                <p>Bag:{i?.item.itemName}</p>
+                <p>Quantity: {i?.quantity}</p>
+                <p>Price: Rs. {i?.item.itemPerPrice}</p>
+            </td>
+            <td>
+                <p>Rs.{i?.quantity * i?.item.itemPerPrice + 100}</p>
+            </td>
+            <td>
+                <p>{i?.deliveryDate}</p>
+            </td>
+            <td>
+                <p>{i?.deliveryStatus}</p>
+            </td>
+        </tr>
+    ))}
 
                     </tbody>
                 </table>
