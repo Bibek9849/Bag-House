@@ -10,7 +10,7 @@
     position: sticky;
     top: 0;
     height:10%;
-    background: darkgray;
+    background: rgb(13, 14, 38);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 
@@ -52,7 +52,7 @@
 .c-btn-wrapper button {
     margin-left: 200px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 7px;
     cursor: pointer;
     border: none;
@@ -86,7 +86,7 @@
 .c-btn_before button {
     margin-left: 150px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 10px;
     cursor: pointer;
     border: none;
@@ -102,7 +102,7 @@
 }
 /* Change the border color when the button is hovered */
 .c-btn_before button:hover {
-    border-bottom-color: black; /* Change to your desired border color */
+    border-bottom-color: white; /* Change to your desired border color */
 }
 .c-btn-wrapper button{
     border-bottom: 3px solid transparent;
@@ -110,7 +110,7 @@
 }
 /* Change the border color when the button is hovered */
 .c-btn-wrapper button:hover {
-    border-bottom-color: black; /* Change to your desired border color */
+    border-bottom-color: white; /* Change to your desired border color */
 }
 
 /*.au-btn_before button i {*/

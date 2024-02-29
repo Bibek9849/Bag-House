@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     height:10%;
-    background: darkgrey;
+    background: rgb(13, 14, 38);
 
 
 }
@@ -46,7 +46,7 @@
 .myaccount-btn-wrapper button {
     margin-left: 200px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 5px;
     cursor: pointer;
     border: none;
@@ -75,7 +75,7 @@
 .myaccount-btn_before button {
     margin-left: 150px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 10px;
     cursor: pointer;
     border: none;
@@ -309,7 +309,7 @@
 }
 /* Change the border color when the button is hovered */
 .myaccount-btn_before button:hover {
-    border-bottom-color: black; /* Change to your desired border color */
+    border-bottom-color: white; /* Change to your desired border color */
 }
 .myaccount-btn-wrapper button{
     border-bottom: 3px solid transparent;
@@ -317,5 +317,5 @@
 }
 /* Change the border color when the button is hovered */
 .myaccount-btn-wrapper button:hover {
-    border-bottom-color: black; /* Change to your desired border color */
+    border-bottom-color: white; /* Change to your desired border color */
 }

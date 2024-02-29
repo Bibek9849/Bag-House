@@ -24,7 +24,7 @@
     position: sticky;
     top: 0;
     height:10%;
-    background: darkgray;
+    background: rgb(13, 14, 38);
 
 
 }
@@ -64,7 +64,7 @@
 .ck-btn-wrapper button {
     margin-left: 200px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 17px;
     cursor: pointer;
     border: none;
@@ -94,7 +94,7 @@
 .ck-btn_before button {
     margin-left: 150px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 10px;
     cursor: pointer;
     border: none;

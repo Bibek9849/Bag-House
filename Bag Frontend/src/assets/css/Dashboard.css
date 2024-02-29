@@ -6,7 +6,7 @@
 }
 /* Change the border color when the button is hovered */
 .db-btn_before button:hover {
-    border-bottom-color: black; /* Change to your desired border color */
+    border-bottom-color: white; /* Change to your desired border color */
 }
 .db-btn-wrapper button{
     border-bottom: 3px solid transparent;
@@ -14,12 +14,12 @@
 }
 /* Change the border color when the button is hovered */
 .db-btn-wrapper button:hover {
-    border-bottom-color: black; /* Change to your desired border color */
+    border-bottom-color: white; /* Change to your desired border color */
 }
 
 .db-container .db-header{
     display:flex;
-    background-color: darkgrey;
+    background-color: rgb(13, 14, 38);
 
     justify-content: space-between;
     align-items: flex-start;
@@ -53,7 +53,7 @@
     color: black;
     border-radius:40px ;
     font-size: 16px;
-    border: 2px solid black;
+    border: 2px solid white;
     outline: none;
 
 }
@@ -66,7 +66,7 @@
 .db-btn-wrapper button {
     margin-left: 10px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 10px;
     cursor: pointer;
     border: none;
@@ -96,7 +96,7 @@
 .db-btn_before button {
     margin-left: 10px;
     background-color:transparent;
-    color: black;
+    color: white;
     padding: 25px 10px;
     cursor: pointer;
     border: none;
@@ -281,7 +281,7 @@
 }
 /* Change the border color when the button is hovered */
 .db-btn_before button:hover {
-    border-bottom-color: black; /* Change to your desired border color */
+    border-bottom-color: white; /* Change to your desired border color */
 }
 .db-btn-wrapper button{
     border-bottom: 3px solid transparent;
