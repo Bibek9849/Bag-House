@@ -49,10 +49,10 @@
 }
 
 .au-btn-wrapper button {
-    margin-left: 10px;
+    margin-left: 200px;
     background-color:transparent;
     color: black;
-    padding: 25px 10px;
+    padding: 25px 7px;
     cursor: pointer;
     border: none;
     /*border-radius: 4px;*/
@@ -83,7 +83,7 @@
     margin-right: 5px; /* Add spacing between the icon and text */
 }
 .au-btn_before button {
-    margin-left: 10px;
+    margin-left: 150px;
     background-color:transparent;
     color: black;
     padding: 25px 10px;
@@ -120,7 +120,7 @@
 
     display: flex;
     height:40% ;
-    background: black;
+    background: rgb(13, 14, 38);
     /*margin-top: 20px;*/
     font-size: 5px;
     /*align-items: flex-end;*/
@@ -137,6 +137,12 @@
 
 
 }
+.contact-info p {
+    margin-left: 58px;
+    font-size: 20px;
+    color: white; /* Set the color of the email text to white */
+}
+
 .au-footer .au-about-us{
     display: flex;
     flex-direction: column;
@@ -164,6 +170,7 @@
     color: white; /* Change to the desired color on hover */
 }
 .au-get-help span{
+    margin-left: 595px;
     font-size: 13px;
     margin-top: 15px;
     color: lightgrey;
@@ -185,8 +192,8 @@
 
 
 .au-logos span{
-    font-size: 16px;
-    color: lightgrey;
+    font-size: 27px;
+    color: white;
 
 }
 
@@ -209,12 +216,18 @@
     font-size: 18px;
 }
 .au-about-us h1{
+    margin-left: -363px;
     color: white;
-    font-size: 15px;
+    font-size: 31px;
+}
+.p{
+    color:white;
 }
 .au-get-help h1{
+    margin-top: -50px;
+    margin-left: 119px;
     color: white;
-    font-size: 15px;
+    font-size: 29px;
 }
 .au-body h2{
     font-size: 20px;

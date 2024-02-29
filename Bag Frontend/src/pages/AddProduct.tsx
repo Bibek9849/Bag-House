@@ -137,10 +137,10 @@ function AddProduct() {
                 <form onSubmit={handleSubmit(onSubmit)}>
                 <div className={"ap-details"}>
                     <div className={"ap-firstrow"}>
-                        <input type={"text"} placeholder={"Enter Product Name"} {...register("itemName")} />
-                        <input  className={"product-description-input"} type={"text"} placeholder={"Enter Product Description"}  {...register("itemDescription")} />
-                        <input type={"number"} placeholder={"Enter Product Price"} {...register("itemPerPrice")} />
-                        <input type={"number"} placeholder={"Enter Product Quantity" } {...register("itemQuantity")} />
+                        <input type={"text"} placeholder={"Enter Bag"} {...register("itemName")} />
+                        <input  className={"product-description-input"} type={"text"} placeholder={"Bags Description"}  {...register("itemDescription")} />
+                        <input type={"number"} placeholder={" Bags Price"} {...register("itemPerPrice")} />
+                        <input type={"number"} placeholder={" Bags Quantity" } {...register("itemQuantity")} />
                         <select {...register("brandName")} defaultValue="" >
                             <option value="" disabled>Select Brand</option>
                             {brandData?.data.map((i) => (

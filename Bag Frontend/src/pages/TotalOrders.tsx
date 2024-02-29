@@ -112,7 +112,7 @@ function TotalOrders() {
                 <p>{i?.deliveryDate}</p>
             </td>
             <td>
-                <p>{i?.deliveryStatus}</p>
+                <p>{i?.delivryStatus}</p>
             </td>
         </tr>
     ))}

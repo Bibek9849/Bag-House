@@ -6,10 +6,7 @@ import Register from './pages/Register.tsx';
 import Login from './pages/Login.tsx';
 import MyAccount from './pages/MyAccount.tsx';
 import EditProfile from './pages/EditProfile.tsx';
-import Changepassword from './pages/Changepassword.tsx';
-import Myorders from './pages/Myorders.tsx';
 import Aboutus from './pages/Aboutus.tsx';
-import Contactus from './pages/Contactus.tsx';
 import Searchresult from "./pages/Searchresult.tsx";
 import Checkout from "./pages/Checkout.tsx";
 import  Products from "./pages/Products.tsx";
@@ -20,10 +17,8 @@ import ViewBrand from "./pages/ViewBrand.tsx";
 import AddBrand from "./pages/AddBrand.tsx";
 import TotalOrders from "./pages/TotalOrders.tsx";
 import Users from "./pages/Users.tsx";
-import WishList from "./pages/WishList.tsx";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import Cart from "./pages/Cart.tsx";
-// import Addaddress from "./pages/Addaddress.tsx";
 import Brands from "./pages/Brands.tsx";
 import Category from "./pages/Category.tsx";
 
@@ -38,11 +33,7 @@ const router=createBrowserRouter([
     {path:"/dashboard",element:<Dashboard />},
     {path:"/myaccount",element:<MyAccount />},
     {path:"/editprofile",element:<EditProfile />},
-    {path:"/changepassword",element:<Changepassword />},
-    {path:"/myorders",element:<Myorders />},
     {path:"/aboutus",element:<Aboutus />},
-    {path:"/contactus",element:<Contactus />},
-    // {path:"/customercare",element:<Customercare />},
 
     {path:"/checkout",element:<Checkout />},
     {path:"/admin/products",element:<Products />},
@@ -53,7 +44,6 @@ const router=createBrowserRouter([
     {path:"/admin/addbrand",element:<AddBrand />},
     {path:"/admin/totalorders",element:<TotalOrders />},
     {path:"/admin/users",element:<Users />},
-    {path:"/wishlist",element:<WishList />},
     {path:"/admin/addproduct/:id_p",element:<AddProduct />},
     {path:"/admin/addcategory/:id_p",element:<AddCategory />},
     {path:"/admin/addbrand/:id_p",element:<AddBrand />},

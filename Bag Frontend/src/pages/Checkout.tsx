@@ -10,20 +10,20 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Checkout: React.FC = () => {
-    const apiCall = useMutation({
-        mutationKey: ["POST_wishlist_ITEM"],
-        mutationFn: async (payload) => {
-            try {
-                console.log(payload);
-                const response = await axios.post("http://localhost:8082/wishlist-item/save", payload, {
-                    headers: { Authorization: "Bearer " + localStorage.getItem("token") }
-                });
-                return response.data;
-            } catch (error) {
-                throw error; // You may want to handle errors appropriately based on your application's needs
-            }
-        }
-    });
+    // const apiCall = useMutation({
+    //     mutationKey: ["POST_wishlist_ITEM"],
+    //     mutationFn: async (payload) => {
+    //         try {
+    //             console.log(payload);
+    //             const response = await axios.post("http://localhost:8082/wishlist-item/save", payload, {
+    //                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
+    //             });
+    //             return response.data;
+    //         } catch (error) {
+    //             throw error; // You may want to handle errors appropriately based on your application's needs
+    //         }
+    //     }
+    // });
 
     const apihit = useMutation({
         mutationKey: ["POST_cart_ITEM"],
@@ -135,28 +135,15 @@ const Checkout: React.FC = () => {
                     </a>
                 </div>
                 <div className={"ck-btn_before"}>
-                    <button>Brands</button>
-                    <button>Categories</button>
-                    <Link to="/Contactus">
-                        <button>Contact Us</button>
-                    </Link>
+                    <Link to={"/dashboard"}><button>Home</button></Link>
                     <Link to="/Aboutus">
                         <button>About Us</button>
                     </Link>
                 </div>
-                <div className={"ck-searchbar"}>
-                    <input type={"text"} placeholder={"Search Product"}/>
-                </div>
-                <div className={"ck-search_button"}>
-                    <button><i className="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-
                 <div className={"ck-btn-wrapper"}>
                     <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
-                    <Link to="/wishlist"><button><i className="fa-regular fa-heart"></i>Wishlist</button></Link>
-                    <Link to="/MyAccount">
-                        <button>My Account</button>
-                    </Link>
+                    <Link to="/myaccount" className="link-button"><button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button></Link>                    
+
                     <Link to="/">
                         <button onClick={()=>{
                             localStorage.clear();
@@ -164,6 +151,9 @@ const Checkout: React.FC = () => {
                         }}>Sign Out</button>
                     </Link>
                 </div>
+                
+
+                
             </div>
             <div className={"ck-body"}>
                 <form onSubmit={handleSubmit(onsubmit)}>
@@ -181,10 +171,10 @@ const Checkout: React.FC = () => {
                         </div>
                         <div className={"ck-buttons"}>
                             <button className={"add"} onClick={buttonclick}>Add to cart</button>
-                            <button className="wish" onClick={handleButtonClick}>
+                            {/* <button className="wish" onClick={handleButtonClick}>
                                 Favourite
                                 <i className="fa-solid fa-heart" style={{ color: heartColor }} ></i>
-                            </button>
+                            </button> */}
                         </div>
 
 
@@ -209,18 +199,15 @@ const Checkout: React.FC = () => {
                                     <span onClick={() => handleColorSelection('Black')}>Black</span>
                                     <span onClick={() => handleColorSelection('White')}>White</span>
                                     <span onClick={() => handleColorSelection('Grey')}>Grey</span>
-                                    <span onClick={() => handleColorSelection('Navy Blue')}>Navy Blue</span>
+                                    <span onClick={() => handleColorSelection('Pink')}>Pink</span>
                                 </div>
                             </div>
                             <div className={"desc4"}>
                                 <p>Size:</p>
                                 <div className={"sizeoptions"}>
-                                    <span onClick={() => handleSizeSelection('XS')}  className={selectedSize === 'XS' ? 'selectedSize' : ''}>XS</span>
                                     <span onClick={() => handleSizeSelection('S')}  className={selectedSize === 'S' ? 'selectedSize' : ''}>S</span>
                                     <span onClick={() => handleSizeSelection('M')}  className={selectedSize === 'M' ? 'selectedSize' : ''}>M</span>
                                     <span onClick={() => handleSizeSelection('L')}  className={selectedSize === 'L' ? 'selectedSize' : ''}>L</span>
-                                    <span onClick={() => handleSizeSelection('XL')}  className={selectedSize === 'XL' ? 'selectedSize' : ''}>XL</span>
-                                    <span onClick={() => handleSizeSelection('2XL')}  className={selectedSize === '2XL' ? 'selectedSize' : ''}>2XL</span>
                                 </div>
                             </div>
                             <div className={"desc5"}>
@@ -242,49 +229,26 @@ const Checkout: React.FC = () => {
             </div>
             <div className={"ck-footer"}>
                 <div className={"ck-get-help"}>
-                    <h1>GET HELP</h1>
-                    <Link to="/Customercare"><button>Customer Care</button></Link>
-                    <Link to="/Payment"><button>Payment Options</button></Link>
-                    <Link to="/ReturnandRefund"><button>Return and Refund Policy</button></Link>
-                    <Link to="/PrivacyPolicy"><button>Privacy Policy</button></Link>
-                    <Link to="/Termsandcondition"><button>Terms and Conditions</button></Link>
-                    <span>@2023 Lugahub Pvt. Ltd. All Rights Reserved</span>
+                    <h1>Contact Us</h1>
+                    <div className="contact-info">
+                        <p>Email: baghouse@gmail.com</p>
+                        <p>Phone No: 9818619735</p>
+
+                    </div>
+                    <span>@2024 BagHouse Pvt. Ltd. All Rights Reserved</span>
                 </div>
                 <div className={"ck-about-us"}>
-                    <h1>LUGAHUB</h1>
-                    <Link to="/Aboutus"><button>About Us</button></Link>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
-                    <Link to="/Careers"><button>Careers</button></Link>
+                    <h1>Bag House</h1>
                 </div>
                 <div className={"ck-logos"}>
-                    <span>Connect with us:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"../images/fb.png"}
-                            alt="Facebook"
-                        />
+                    <span>Follow Us:</span>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img width={43} src={"images/fb.png"} alt="Facebook" />
                     </a>
-
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"../images/insta.png"}
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"../images/thread.png"}
-                            alt="X"
-                        />
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img width={43} src={"images/insta.png"} alt="Instagram" />
                     </a>
                 </div>
-
             </div>
         </div>
 

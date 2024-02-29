@@ -24,7 +24,7 @@
     position: sticky;
     top: 0;
     height:10%;
-    background: white;
+    background: darkgray;
 
 
 }
@@ -62,10 +62,10 @@
 }
 
 .ck-btn-wrapper button {
-    margin-left: 10px;
-    background-color:white;
+    margin-left: 200px;
+    background-color:transparent;
     color: black;
-    padding: 25px 10px;
+    padding: 25px 17px;
     cursor: pointer;
     border: none;
     border-radius: 0;
@@ -92,8 +92,8 @@
     margin-right: 5px; /* Add spacing between the icon and text */
 }
 .ck-btn_before button {
-    margin-left: 10px;
-    background-color:white;
+    margin-left: 150px;
+    background-color:transparent;
     color: black;
     padding: 25px 10px;
     cursor: pointer;
@@ -111,7 +111,7 @@
 
     display: flex;
     height:40% ;
-    background: black;
+    background: rgb(13, 14, 38);
     /*margin-top: 20px;*/
     font-size: 5px;
     /*align-items: flex-end;*/
@@ -155,12 +155,12 @@
     color: white; /* Change to the desired color on hover */
 }
 .ck-get-help span{
+    margin-left: 595px;
     font-size: 13px;
     margin-top: 15px;
     color: lightgrey;
     /*padding-bottom: -50px;*/
     /*margin-bottom: -60px;*/
-
 
 }
 .ck-about-us button{
@@ -176,8 +176,8 @@
 
 
 .ck-logos span{
-    font-size: 16px;
-    color: lightgrey;
+    font-size: 27px;
+    color: white;
 
 }
 
@@ -194,8 +194,8 @@
 .ck-body .descc{
     margin-top: 10px;
     height: 97vh;
-    margin-left: 107px;
-    width: 85vw;
+    margin-left: 767px;
+    width: 80vw;
     color: black;
     display: flex;
     background-color: white;
@@ -246,18 +246,22 @@
     margin: 2px;
 }
 .add {
+    margin-left: 74px;
     background-color: black;
     color: white;
     font-size: 17px;
     border-radius: 30px;
 }
 .ck-about-us h1{
+    margin-left: -363px;
     color: white;
-    font-size: 15px;
+    font-size: 31px;
 }
 .ck-get-help h1{
+    margin-top: -50px;
+    margin-left: 119px;
     color: white;
-    font-size: 15px;
+    font-size: 29px;
 }
 .desc1{
     display: flex;
@@ -268,7 +272,7 @@
 }
 .desc1 input{
     font-weight: 500;
-    width: 700px;
+    width: 370px;
     color: black;
     background-color: white;
     outline: none;

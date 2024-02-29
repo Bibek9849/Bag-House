@@ -51,23 +51,14 @@ function Dashboard() {
                     </a>
                 </div>
                 <div className={"db-btn_before"}>
-                    <Link to={"/dashboard"}><button>Home</button></Link>
-
-                    {/* <button>Bags</button> */}
-                    <Link to="/Aboutus">
-                        <button>About Us</button>
-                    </Link>
+                    <Link to="/dashboard" className="link-button"><button><i className="fa-solid fa-home home-icon"></i>Home</button></Link>                  
+                    <Link to="/Aboutus"><button><i className="fa-solid fa-info-circle about-icon"></i>About Us</button></Link>
                 </div>
                 <div className={"db-btn-wrapper"}>
                     <Link to={"/cart"}><button><i className="fa-solid fa-cart-shopping cart-icon"></i>Cart</button></Link>
-                    <Link to={"/wishlist"}><button><i className="fa-regular fa-heart"></i>Favourite</button></Link>
-                    <Link to="/myaccount"><button>Profile</button></Link>
-                    <Link to="/">
-                        <button onClick={()=>{
-                            localStorage.clear();
-                            window.location.href="/login"
-                        }}>Sign Out</button>
-                    </Link>
+                    <Link to="/myaccount" className="link-button"><button><i className="fa-solid fa-user-circle profile-icon"></i>Profile</button></Link>                    
+                    <Link to="/"><button> <i className="fa-solid fa-sign-out"></i>Log Out</button></Link>
+
                 </div>
 
                 <div className={"s-searchbar"}>
@@ -188,53 +179,28 @@ function Dashboard() {
             </div>
             <div className={"db-footer"}>
                 <div className={"db-get-help"}>
-                    <h1>GET HELP</h1>
-                    <Link to="/Customercare"><button>Customer Care</button></Link>
-                    <Link to="/Payment"><button>Payment Options</button></Link>
-                    <Link to="/returnandrefundpolicy"><button>Return and Refund Policy</button></Link>
-                    <Link to="/PrivacyPolicy"><button>Privacy Policy</button></Link>
-                    <Link to="/Termsandcondition"><button>Terms and Conditions</button></Link>
-                    <span>@2024 Lugahub Pvt. Ltd. All Rights Reserved</span>
+                    <h1>Contact Us</h1>
+                    <div className="contact-info">
+                        <p>Email: baghouse@gmail.com</p>
+                        <p>Phone No: 9818619735</p>
 
+                    </div>
+                    <span>@2024 BagHouse Pvt. Ltd. All Rights Reserved</span>
                 </div>
-                <div className={"home-about-us"}>
+                <div className={"db-about-us"}>
                     <h1>Bag House</h1>
-                    <Link to="/Aboutus"><button>About Us</button></Link>
-                    <Link to="/Contactus"><button>Contact Us</button></Link>
-                    <Link to="/Careers"><button>Careers</button></Link>
                 </div>
-                <div className={"home-logos"}>
-                    <span>Connect with us:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61555012223662&is_tour_dismissed=true"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/fb.png"}
-                            alt="Facebook"
-                        />
+                <div className={"db-logos"}>
+                    <span>Follow Us:</span>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img width={43} src={"images/fb.png"} alt="Facebook" />
                     </a>
-
-                    <a href="https://www.instagram.com/luga.hub69/"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/insta.png"}
-                            alt="Facebook"
-                        />
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img width={43} src={"images/insta.png"} alt="Instagram" />
                     </a>
-                    <a href="https://www.threads.net/@luga.hub69"
-                       target="_blank" rel="noopener noreferrer">
-                        <img
-                            width={43}
-                            src={"images/thread.png"}
-                            alt="X"
-                        />
-                    </a>
-
-
                 </div>
-
             </div>
+
         </div>
 
 

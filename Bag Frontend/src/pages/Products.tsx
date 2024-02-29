@@ -122,14 +122,14 @@ function Products() {
                 </div>
             </div>
             <div className={"Pr-display"}>
-                <h2>View Products</h2>
+                <h2>View Bag</h2>
                 <table>
                     <thead>
                     <tr>
-                        <th>Product Name</th>
-                        <th>Product Image</th>
-                        <th>Product Description</th>
-                        <th>Product Price</th>
+                        <th>Bag Name</th>
+                        <th>Bag Image</th>
+                        <th>Bag Description</th>
+                        <th>Bag Price</th>
                         <th>Quantity</th>
                         <th>Brand</th>
                         <th>Category</th>

@@ -112,12 +112,13 @@
 
 
     display: flex;
-    height:40% ;
-    background: black;
+    height:223px ;
+    background: rgb(13, 14, 38);
     /*margin-top: 20px;*/
     font-size: 5px;
     /*align-items: flex-end;*/
     justify-content: space-around;
+
 
 }
 .db-footer .db-get-help{
@@ -129,6 +130,11 @@
     margin-top: 35px;
 
 
+}
+.contact-info p {
+    margin-left: 58px;
+    font-size: 20px;
+    color: white; /* Set the color of the email text to white */
 }
 .db-footer .db-about-us{
     display: flex;
@@ -157,6 +163,7 @@
     color: white; /* Change to the desired color on hover */
 }
 .db-get-help span{
+    margin-left: 595px;
     font-size: 13px;
     margin-top: 15px;
     color: lightgrey;
@@ -180,21 +187,25 @@
     color: white; /* Change to the desired color on hover */
 }
 .db-about-us h1{
+    margin-left: -363px;
     color: white;
-    font-size: 15px;
+    font-size: 31px
 }
 .db-get-help h1{
+    margin-top: -50px;
+    margin-left: 119px;
     color: white;
-    font-size: 15px;
+    font-size: 29px;
 }
 
 
 .db-logos span{
-    font-size: 16px;
-    color: lightgrey;
+    font-size: 27px;
+    color: white;
 
 
 }
+
 
 .db-logos img{
     cursor: pointer;
@@ -245,13 +256,12 @@
 .db-product-dash1{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
-    padding-left: 15px;
-    padding-top: 20px;
+    column-gap: 90px;
+    padding-left: 13px;
+    padding-top: 8px;
     margin-left: 70px;
-    width: 89.5vw;
-    height: 100vh;
-    border: 1px solid black;
+    width: 57.5vw;
+    height: 105vh;
 }
 .db-product-dash2{
     display: flex;
@@ -294,7 +304,7 @@
 }
 .item-section .item-image img{
     width: 14vw;
-    height: 30vh;
+    height: 24vh;
 }
 .item-section p{
     margin: 2px;
