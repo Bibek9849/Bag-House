@@ -124,6 +124,8 @@ console.log(data)
         checkoutApi.mutate(payload,{
             onSuccess(res){
                 console.log(res)
+                toast.success('Order successful!');
+
                 window.location.href="/dashboard"
             },
             onError(err){
@@ -206,7 +208,7 @@ console.log(data)
 
                     ) : (
                         <div className={"no-item"}>
-                            <img src={"../images/empty-cart.png"} alt={"empty-cart"} width={100}/>
+                            <img src={"../images/cart.png"} alt={"empty-cart"} width={100}/>
                             <p>Nothing is here</p>
                             <Link to="/dashboard"><button>Buy First</button></Link>
                         </div>
@@ -223,7 +225,7 @@ console.log(data)
                                 <tbody>
                                 <tr>
                                     <th>Delivery Charge:</th>
-                                    <td>Rs.65</td>
+                                    <td>Rs.100</td>
                                 </tr>
                                 </tbody>
                                 <tbody>

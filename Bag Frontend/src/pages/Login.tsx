@@ -36,6 +36,8 @@ const Login: React.FC = () => {
                 const { token, userId } = await response.json();
                 localStorage.setItem('token', token);
                 localStorage.setItem("userId",userId)
+                console.log(localStorage.getItem('userId'))
+                console.log("-----")
 
                 // Decode the token to get user roles
                 const decodedToken: DecodedToken = parseJwt(token);

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import "../assets/css/EditProfile.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const EditProfile: React.FC = () => {
@@ -43,19 +45,23 @@ const EditProfile: React.FC = () => {
             [name]: value,
         });
     };
+    
 
     const saveChanges = async () => {
         try {
             // Assuming there's an API endpoint to update user details
             const userId = localStorage.getItem('userId');
             if (userId) {
-                await axios.put(`http://localhost:8087/user/update/${userId}`, editedDetails);
+                await axios.put(`http://localhost:8082/user/update/${userId}`, editedDetails);
                 // Optionally, you can refetch the updated details
                 fetchUserDetails();
                 console.log('Changes saved successfully!');
+                toast.success('Updated successful!');
+
             }
         } catch (error) {
             console.error('Error saving changes:', error);
+            toast.error('Please check your Details.');
         }
     };
 
@@ -158,6 +164,7 @@ const EditProfile: React.FC = () => {
                     </a>
                 </div>
             </div>
+            <ToastContainer/>
         </div>
 
     );

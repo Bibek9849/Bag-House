@@ -30,11 +30,6 @@ function Dashboard() {
         enabled: false, // Set to false initially
     });
 
-    const handleSearch = () => {
-        // Trigger the query when the search button is clicked
-        refetch();
-    };
-
 
     console.log(data?.data)
     return (
@@ -61,20 +56,7 @@ function Dashboard() {
 
                 </div>
 
-                <div className={"s-searchbar"}>
-                   <input
-                       type={"text"}
-                       placeholder={"Search Bags"}
-                       onChange={(e) => {
-                           setSearchData(e.target.value);
-                       }}
-                   />
-                </div>
-                <div className={"s-search_button"}>
-                    <button type="submit" onClick={handleSearch}>
-                        <i className="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
+               
 
                 
             </div>
@@ -151,31 +133,7 @@ function Dashboard() {
 
 
                 </div>
-                {/* <div className={"db-dash2"}>
-                    <div className={"db-product-dash2"}>
-                        {data?.data.slice(12).map((i) => (
-                            <div onClick={() => { navigate("/products/" + i?.id) }} className={"item-section"} key={i.itemId}>
-                                <div className={"item-image"}>
-                                    <img src={"data:image/png;base64, " + i?.itemImage} width={100} alt={i?.itemName} />
-                                </div>
-
-                                <div className={"item-info"}>
-                                    <p>{i?.itemName}</p>
-                                    <p>{i?.itemDescription}</p>
-                                </div>
-                                <div className={"item-desc"}>
-                                    <div className={"item--desc-detail"}>
-                                        <p>Rs.{i?.itemPerPrice}</p>
-                                    </div>
-                                    <div className={"item-quantity"}>
-                                        <p>Stock:({i?.itemQuantity})</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-
-                    </div> */}
-                {/* </div> */}
+                
             </div>
             <div className={"db-footer"}>
                 <div className={"db-get-help"}>
