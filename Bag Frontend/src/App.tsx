@@ -7,7 +7,6 @@ import Login from './pages/Login.tsx';
 import MyAccount from './pages/MyAccount.tsx';
 import EditProfile from './pages/EditProfile.tsx';
 import Aboutus from './pages/Aboutus.tsx';
-import Searchresult from "./pages/Searchresult.tsx";
 import Checkout from "./pages/Checkout.tsx";
 import  Products from "./pages/Products.tsx";
 import  AddProduct from "./pages/AddProduct.tsx";
@@ -28,13 +27,10 @@ const router=createBrowserRouter([
     {path:"/register",element:<Register />},
     {path:"/login",element:<Login />},
     {path:"/login",element:<Login />},
-    {path:"/searchresult",element:<Searchresult />},
-
     {path:"/dashboard",element:<Dashboard />},
     {path:"/myaccount",element:<MyAccount />},
     {path:"/editprofile",element:<EditProfile />},
     {path:"/aboutus",element:<Aboutus />},
-
     {path:"/checkout",element:<Checkout />},
     {path:"/admin/products",element:<Products />},
     {path:"/admin/addproduct",element:<AddProduct />},

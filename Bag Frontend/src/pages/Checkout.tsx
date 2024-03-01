@@ -8,6 +8,7 @@ import {useNavigate, useParams} from "react-router-dom";
 import {useMutation,useQuery} from "@tanstack/react-query";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import back from "../../images/back.jpg"
 
 const Checkout: React.FC = () => {
     // const apiCall = useMutation({
@@ -155,7 +156,16 @@ const Checkout: React.FC = () => {
 
                 
             </div>
+
             <div className={"ck-body"}>
+                <div className={"db-img-dash1"}>
+                    <img
+                        className="d-block w-100"
+                        src={back}
+                        alt="Pic"
+                    />
+                </div>
+
                 <form onSubmit={handleSubmit(onsubmit)}>
                 <div className={"descc"}>
                     <div className={"ck-image-sec"}>
