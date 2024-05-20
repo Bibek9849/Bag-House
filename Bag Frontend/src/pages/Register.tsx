@@ -20,7 +20,7 @@ function Register() {
         mutationKey: ['POST_USER_REGISTER'],
         mutationFn: async (formData) => {
             try {
-                const response = await axios.post('http://localhost:8082/user/save', formData, {
+                const response = await axios.post('https://40.88.27.240:8082/user/save', formData, {
                     headers: {
                         'Content-Type': 'application/json',
                     },

@@ -7,7 +7,7 @@ function Users() {
     const {data}=useQuery({
         queryKey:["GET_ITEM_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/user/getAll", {
+            return axios.get("https://40.88.27.240:8082/user/getAll", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         }

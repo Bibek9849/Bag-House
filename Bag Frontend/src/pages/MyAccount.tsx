@@ -20,7 +20,7 @@ const MyAccount: React.FC = () => {
 
             if (userId) {
                 // Fetch user details by ID using your API endpoint
-                const response = await axios.get(`http://localhost:8082/user/getById/${userId}`);
+                const response = await axios.get(`https://40.88.27.240:8082/user/getById/${userId}`);
 
                 // Set the user details in the state
                 setUserDetails(response.data);

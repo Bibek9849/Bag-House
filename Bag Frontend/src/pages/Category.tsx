@@ -23,7 +23,7 @@ const Category: React.FC = () => {
         queryKey: ['getProductsByCategory', categoryName],
         queryFn: () =>
             axios
-                .get(`http://localhost:8082/item/getItemsByCategoryName/${categoryName}`)
+                .get(`https://40.88.27.240:8082/item/getItemsByCategoryName/${categoryName}`)
                 .then((response) => {
                     console.log('API Response:', response.data);
                     return response.data;

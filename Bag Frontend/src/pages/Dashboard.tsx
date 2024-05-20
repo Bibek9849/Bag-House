@@ -13,7 +13,7 @@ function Dashboard() {
     const {data}=useQuery({
         queryKey:["GET_Dashboard_ITEM_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/item/getAll", {
+            return axios.get("https://40.88.27.240:8082/item/getAll", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         }
@@ -23,7 +23,7 @@ function Dashboard() {
     const { data: searchByName, refetch } = useQuery({
         queryKey: ["SEARCHBYNAME"],
         queryFn: () => {
-            return axios.get("http://localhost:8082/item/searchByName/" + searchData, {
+            return axios.get("https://40.88.27.240:8082/item/searchByName/" + searchData, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             });
         },

@@ -20,14 +20,14 @@ function TotalOrders() {
     const {data}=useQuery({
         queryKey:["GET_Cart-ITEM_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/cart/getAll")
+            return axios.get("https://40.88.27.240:8082/cart/getAll")
         }
     })
 
     const {data:getApiOfOrders}=useQuery({
         queryKey:["GET_ORDERS_DATA"],
         queryFn(){
-            return axios.get("http://localhost:8082/order/getAll",{
+            return axios.get("https://40.88.27.240:8082/order/getAll",{
                 headers:{
                     "authorization":"Bearer "+localStorage.getItem("token")
                 }

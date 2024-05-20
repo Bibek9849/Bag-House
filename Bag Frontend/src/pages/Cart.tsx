@@ -26,7 +26,7 @@ const Cart: React.FC = () => {
     const {data,refetch}=useQuery({
         queryKey:["GET_Cart-ITEM_BY_USERID",userId],
         queryFn(){
-            return axios.get(`http://localhost:8082/cart/getByUserId/${userId}`, {
+            return axios.get(`https://40.88.27.240:8082/cart/getByUserId/${userId}`, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         }
@@ -35,7 +35,7 @@ const Cart: React.FC = () => {
     const deleteApi = useMutation({
         mutationKey: ["DELETE-CART_ITEM"],
         mutationFn(id: number) {
-            return axios.delete("http://localhost:8082/cart/deleteById/"+id, {
+            return axios.delete("https://40.88.27.240:8082/cart/deleteById/"+id, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         },
@@ -89,7 +89,7 @@ const Cart: React.FC = () => {
     const checkoutApi=useMutation({
         mutationKey:["CHECKOUT_API"],
         mutationFn(payload){
-            return axios.post("http://localhost:8082/order/saveAll",payload,{
+            return axios.post("http://40.88.27.240:8082/order/saveAll",payload,{
                 headers:{
                     "authorization":"Bearer "+localStorage.getItem("token")
                 }

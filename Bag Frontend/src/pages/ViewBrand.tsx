@@ -16,14 +16,14 @@ function ViewBrand() {
     const {data,refetch}=useQuery({
         queryKey:["GET_ITEM_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/brand/getAll")
+            return axios.get("https://40.88.27.240:8082/brand/getAll")
         }
     })
     console.log(data?.data)
     const deleteApi = useMutation({
         mutationKey: ["DELETE_ITEM"],
         mutationFn(id: number) {
-            return axios.delete("http://localhost:8082/brand/deleteById/"+id)
+            return axios.delete("https://40.88.27.240:8082/brand/deleteById/"+id)
         },
         onSuccess() {
             refetch();

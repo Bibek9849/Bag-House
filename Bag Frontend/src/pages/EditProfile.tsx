@@ -23,7 +23,7 @@ const EditProfile: React.FC = () => {
             const userId = localStorage.getItem('userId');
 
             if (userId) {
-                const response = await axios.get(`http://localhost:8082/user/getById/${userId}`);
+                const response = await axios.get(`https://40.88.27.240:8082/user/getById/${userId}`);
                 setUserDetails(response.data);
 
                 // Set the initial values for editing
@@ -52,7 +52,7 @@ const EditProfile: React.FC = () => {
             // Assuming there's an API endpoint to update user details
             const userId = localStorage.getItem('userId');
             if (userId) {
-                await axios.put(`http://localhost:8082/user/update/${userId}`, editedDetails);
+                await axios.put(`https://40.88.27.240:8082/user/update/${userId}`, editedDetails);
                 // Optionally, you can refetch the updated details
                 fetchUserDetails();
                 console.log('Changes saved successfully!');

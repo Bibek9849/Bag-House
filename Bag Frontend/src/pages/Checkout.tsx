@@ -16,7 +16,7 @@ const Checkout: React.FC = () => {
     //     mutationFn: async (payload) => {
     //         try {
     //             console.log(payload);
-    //             const response = await axios.post("http://localhost:8082/wishlist-item/save", payload, {
+    //             const response = await axios.post("https://40.88.27.240:8082/wishlist-item/save", payload, {
     //                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
     //             });
     //             return response.data;
@@ -30,7 +30,7 @@ const Checkout: React.FC = () => {
         mutationKey: ["POST_cart_ITEM"],
         mutationFn: (payload) => {
             console.log(payload);
-            return axios.post("http://localhost:8082/cart/save", payload, {
+            return axios.post("https://40.88.27.240:8082/cart/save", payload, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             });
         },
@@ -113,7 +113,7 @@ const Checkout: React.FC = () => {
     const { data: dataById } = useQuery({
         queryKey: ['GETBYID'],
         queryFn() {
-            return axios.get(`http://localhost:8082/item/getById/${id_p}`, {
+            return axios.get(`https://40.88.27.240:8082/item/getById/${id_p}`, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             });
         },

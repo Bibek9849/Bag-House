@@ -21,7 +21,7 @@ const Login: React.FC = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('http://localhost:8082/authenticate', {
+            const response = await fetch('https://40.88.27.240:8082/authenticate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

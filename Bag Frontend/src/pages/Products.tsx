@@ -13,7 +13,7 @@ function Products() {
     const {data,refetch}=useQuery({
         queryKey:["GET_ITEM_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/item/getAll", {
+            return axios.get("https://40.88.27.240:8082/item/getAll", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         }
@@ -22,7 +22,7 @@ function Products() {
     const deleteApi = useMutation({
         mutationKey: ["DELETE_ITEM"],
         mutationFn(id: number) {
-            return axios.delete("http://localhost:8082/item/deleteById/"+id, {
+            return axios.delete("https://40.88.27.240:8082/item/deleteById/"+id, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         },

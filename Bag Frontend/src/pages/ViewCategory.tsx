@@ -15,7 +15,7 @@ function ViewCategory() {
     const {data,refetch}=useQuery({
         queryKey:["GET_ITEM_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/category/getAll", {
+            return axios.get("https://40.88.27.240:8082/category/getAll", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         }
@@ -24,7 +24,7 @@ function ViewCategory() {
     const deleteApi = useMutation({
         mutationKey: ["DELETE_ITEM"],
         mutationFn(id: number) {
-            return axios.delete("http://localhost:8082/category/deleteById/"+id, {
+            return axios.delete("https://40.88.27.240:8082/category/deleteById/"+id, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         },

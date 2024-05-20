@@ -11,7 +11,7 @@ function AddProduct() {
     const {data: brandData}=useQuery({
         queryKey:["GET_BRAND_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/brand/getAll", {
+            return axios.get("https://40.88.27.240:8082/brand/getAll", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         }
@@ -20,7 +20,7 @@ function AddProduct() {
     const {data}=useQuery({
         queryKey:["GET_CATEGORY_ALL"],
         queryFn(){
-            return axios.get("http://localhost:8082/category/getAll", {
+            return axios.get("https://40.88.27.240:8082/category/getAll", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             })
         }
@@ -32,7 +32,7 @@ function AddProduct() {
     const { data: dataById } = useQuery({
         queryKey: ['GETBYID'],
         queryFn() {
-            return axios.get(`http://localhost:8082/item/getById/${id_p}`, {
+            return axios.get(`https://40.88.27.240:8082/item/getById/${id_p}`, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             });
         },
@@ -44,7 +44,7 @@ function AddProduct() {
         mutationKey:["POST_ITEM"],
         mutationFn: async (formData) => {
             try {
-                const response = await axios.post('http://localhost:8082/item/save', formData, {
+                const response = await axios.post('https://40.88.27.240:8082/item/save', formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data',
                         'Authorization': 'Bearer ' + localStorage.getItem('token'),

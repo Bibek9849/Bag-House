@@ -12,7 +12,7 @@ function AddCategory() {
     const { data: dataById } = useQuery({
         queryKey: ['GETBYID'],
         queryFn() {
-            return axios.get(`http://localhost:8082/brand/getById/${id_p}`, {
+            return axios.get(`https://40.88.27.240:8082/brand/getById/${id_p}`, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             });
         },
@@ -24,7 +24,7 @@ function AddCategory() {
         mutationKey: ["POST_ITEM"],
         mutationFn: (payload) => {
             console.log(payload);
-            return axios.post("http://localhost:8082/brand/save", payload, {
+            return axios.post("https://40.88.27.240:8082/brand/save", payload, {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") }
             });
         },
