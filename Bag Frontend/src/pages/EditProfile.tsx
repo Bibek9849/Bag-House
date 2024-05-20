@@ -74,7 +74,7 @@ const EditProfile: React.FC = () => {
                     <a href="/dashboard"> {/* Replace "/dashboard" with the actual URL of your dashboard page */}
                         <img
                             width={100}
-                            src={"images/logo.png"}
+                            src={"images/Logo.png"}
                             alt="Logo"
                         />
                     </a>
@@ -156,10 +156,10 @@ const EditProfile: React.FC = () => {
                 </div>
                 <div className={"ep-logos"}>
                     <span>Follow Us:</span>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/b1bek.pandey" target="_blank" rel="noopener noreferrer">
                         <img width={43} src={"images/fb.png"} alt="Facebook" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/bibekpandey558/" target="_blank" rel="noopener noreferrer">
                         <img width={43} src={"images/insta.png"} alt="Instagram" />
                     </a>
                 </div>

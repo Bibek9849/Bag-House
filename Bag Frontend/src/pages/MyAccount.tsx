@@ -37,7 +37,7 @@ const MyAccount: React.FC = () => {
                     <a href="/dashboard">
                         <img
                             width={100}
-                            src={"images/logo.png"}
+                            src={"images/Logo.png"}
                             alt="Logo"
                         />
                     </a>
@@ -104,10 +104,10 @@ const MyAccount: React.FC = () => {
                 </div>
                 <div className={"myaccount-logos"}>
                     <span>Follow Us:</span>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/b1bek.pandey" target="_blank" rel="noopener noreferrer">
                         <img width={43} src={"images/fb.png"} alt="Facebook" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/bibekpandey558/" target="_blank" rel="noopener noreferrer">
                         <img width={43} src={"images/insta.png"} alt="Instagram" />
                     </a>
                 </div>

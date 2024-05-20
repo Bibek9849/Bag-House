@@ -5,7 +5,7 @@ import { useMutation } from "@tanstack/react-query";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
-import Baglogo  from "../../images/logo.png"
+// import Baglogo  from "../../images/logo.png"
 
 interface FormData {
     firstName: string;
@@ -47,14 +47,14 @@ function Register() {
             console.error('Error during registration', error);
         }
     };
-console.log(Baglogo)
+console.log()
     console.log("registerpage")
     return (
         <div className={"register-container"}>
             <div className={"r-Signup-form"}>
                 <div className={"r-Head"}>
                     <img
-                        src={Baglogo}
+                        src={"images/Logo.png"}
                         alt={"logo"}
                     />
                     <h1>Register</h1>
